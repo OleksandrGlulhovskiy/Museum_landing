@@ -1,0 +1,133 @@
+.footer {
+  background-color: $c-back;
+  padding: 34px 0 30px;
+
+  @include onTablet {
+    padding: 50px 0 30px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+
+    @include onTablet {
+      margin-top: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #f1f5f4;
+
+    @include onTablet {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    display: block;
+
+    font-size: 16px;
+    line-height: 150%;
+    color: $c-white;
+    text-decoration: none;
+
+    &--address {
+      text-decoration: none;
+      display: block;
+      
+      transition: transform $animation-duration;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    &--phone {
+      text-decoration: none;
+      display: block;
+
+      transition: transform $animation-duration;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    &--link {
+      margin-bottom: 5px;
+
+      @include onTablet {
+        margin-bottom: 10px;
+      }
+      transition: transform $animation-duration;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    &--mobile {
+      margin-bottom: 50px;
+    }
+
+    &--email {
+      text-decoration: none;
+      display: block;
+
+      transition: transform $animation-duration;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin: 30px 20px 50px 0;
+
+    transition: transform $animation-duration;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    @include onTablet {
+      margin: 50px 20px 72px 0;
+    }
+  }
+
+  &__copyright {
+    font-size: 14px;
+    line-height: 140%;
+    color: $c-white;
+
+    &--mobile {
+      margin-top: 60px;
+
+      @include onTablet {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+
+    @include onDesktop {
+      gap: 102px;
+    }
+  }
+}
