@@ -1,0 +1,16 @@
+.scroll {
+  display: flex;
+  justify-content: flex-end;
+
+  &__link {
+    width: 30px;
+    height: 30px;
+
+    background-image: url(../images/up-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+
+    @include hover(transform, scale(1.2));
+  }
+}
